@@ -1,12 +1,11 @@
 <script>
 	import { confetti } from '@neoconfetti/svelte'
 	import Result from '$lib/components/Result.svelte'
-	import { showProgress, resetProgress } from '$lib/stores/stores.js'
-
+	import { showProgress } from '$lib/stores/stores.js'
 	import Summary from '$lib/components/Summary.svelte'
 </script>
 
-{#if $showProgress && !$resetProgress}
+{#if $showProgress}
 	<span
 		class="absolute left-[50%] top-28"
 		use:confetti={{
