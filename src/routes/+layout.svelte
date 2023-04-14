@@ -7,5 +7,6 @@
 <style>
 	:global(body) {
 		font-family: HankenGrotesk Variable;
+		user-select: none;
 	}
 </style>

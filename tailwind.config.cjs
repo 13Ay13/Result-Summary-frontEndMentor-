@@ -10,9 +10,6 @@ module.exports = {
 			screens: {
 				md: '700px',
 			},
-			gridTemplateColumns: {
-				// 2: 'repeat(2, minmax(30rem, 65%))',
-			},
 		},
 	},
 	plugins: [require('@tailwindcss/container-queries')],

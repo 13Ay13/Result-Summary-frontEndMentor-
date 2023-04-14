@@ -3,6 +3,8 @@
 	import Result from '$lib/components/Result.svelte'
 	import { showProgress } from '$lib/stores/stores.js'
 	import Summary from '$lib/components/Summary.svelte'
+
+	export let data
 </script>
 
 {#if $showProgress}
@@ -26,7 +28,7 @@
 			class="grid md:grid-cols-2 container lg:max-w-3xl rounded-xl border-x-4"
 		>
 			<Result />
-			<Summary />
+			<Summary {data} />
 		</div>
 	</div>
 </div>

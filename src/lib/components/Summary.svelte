@@ -1,6 +1,9 @@
 <script>
-	import evalCards from '$lib/data.json'
 	import SummaryItem from './SummaryItem.svelte'
+	import { loadCard } from '$lib/stores/stores'
+	export let data
+
+	loadCard.set(data.data)
 </script>
 
 <div
@@ -8,7 +11,7 @@
 >
 	<h2 class="font-semibold text-3xl text-amber-100 tracking-wide">Summary</h2>
 	<div class="space-y-3">
-		{#each evalCards as { ...props }, i (crypto.randomUUID())}
+		{#each $loadCard as { ...props }, i (crypto.randomUUID())}
 			<SummaryItem {props} delay={700 + i * 300} />
 		{/each}
 	</div>
