@@ -1,6 +1,5 @@
 [
 	{
-		"id": 1,
 		"text": "Reaction",
 		"score": 80,
 		"outOf": 100,
@@ -9,7 +8,6 @@
 		"icon": "/assets/icon-reaction.svg"
 	},
 	{
-		"id": 2,
 		"text": "Memory",
 		"score": 92,
 		"outOf": 100,
@@ -18,7 +16,6 @@
 		"icon": "/assets/icon-memory.svg"
 	},
 	{
-		"id": 3,
 		"text": "Verbal",
 		"score": 61,
 		"outOf": 100,
@@ -27,7 +24,6 @@
 		"icon": "/assets/icon-verbal.svg"
 	},
 	{
-		"id": 4,
 		"text": "Visual",
 		"score": 72,
 		"outOf": 100,
