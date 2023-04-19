@@ -13,7 +13,7 @@
 		use:confetti={{
 			duration: 5600,
 			force: 0.7,
-			particleCount: 300,
+			particleCount: 90,
 			stageHeight: window.innerHeight,
 			stageWidth: window.innerWidth,
 		}}
@@ -34,6 +34,10 @@
 </div>
 
 <style>
+	:global(body) {
+		position: relative;
+	}
+
 	.container {
 		width: min(80%, 80rem);
 	}
